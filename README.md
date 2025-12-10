@@ -25,7 +25,7 @@ This application is designed for academic demonstration, particularly for a **th
 (Add your Streamlit Cloud URL after deployment)
 
 ```
-https://share.streamlit.io/<your-username>/<your-repo>
+https://probabilistic-calibration.streamlit.app/
 ```
 
 ---
