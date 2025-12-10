@@ -2,12 +2,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import joblib
 import matplotlib.pyplot as plt
 
 # Load encoder and models
 encoder = pickle.load(open("models/encoder.pkl", "rb"))
-baseline_model = pickle.load(open("models/baseline_model.pkl", "rb"))
-isotonic_model = pickle.load(open("models/isotonic_model.pkl", "rb"))
+baseline_model = joblib.load("models/baseline_model.pkl")
+isotonic_model = joblib.load("models/isotonic_model.pkl")
 metrics_df = pickle.load(open("artifacts/metrics.pkl", "rb"))
 reliability = pickle.load(open("artifacts/reliability.pkl", "rb"))
 
